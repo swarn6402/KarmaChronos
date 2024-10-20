@@ -1,0 +1,39 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build output
+dist/
+build/
+
+# Ignore environment files
+.env
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore Chrome Extension packaging files
+*.crx
+*.pem
+
+# Ignore npm debug log
+npm-debug.log*
+
+# Ignore yarn integrity file
+.yarn-integrity
+
+# Ignore coverage directory
+coverage/
+
+# Ignore ESLint cache
+.eslintcache
