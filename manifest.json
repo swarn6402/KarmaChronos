@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Life/Event Timer Countdown",
+  "version": "1.0",
+  "description": "A countdown timer with a visual grid representation for your lifespan or events.",
+  "permissions": ["storage"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "128": "Swarn.png"
+  },
+  "action": {
+    "default_icon": "Swarn.png"
+  },
+  "background": {
+    "service_worker": "script.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["style.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
