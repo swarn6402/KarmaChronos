@@ -1,0 +1,231 @@
+/* Body Styling */
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Settings Icon Styling */
+.settings {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 10;
+}
+
+/* Centered Content for Countdown and Text */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.message {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.countdown-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.countdown {
+  display: flex;
+  gap: 15px;
+  color: #ffffff;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-unit span {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.time-unit p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Grid Layout for Squares */
+.grid {
+  display: grid;
+  gap: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.square {
+  background-color: #333;
+  transition: background-color 0.3s;
+}
+
+/* Modal (Settings Popup) Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.modal-content {
+  background: #222;
+  padding: 30px;
+  border-radius: 8px;
+  width: 300px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modal-content label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.modal-content input,
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: none;
+}
+
+.modal-content button {
+  color: #fff;
+  background: #2e4a7d;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content button:hover {
+  background: #388e3c;
+}
+
+/* Tabbed Interface for Settings */
+.tab {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab button.active {
+  background-color: #666;
+  font-weight: bold;
+}
+
+.tabcontent {
+  display: none;
+  margin-top: 20px;
+}
+
+#Lifespan,
+#Event {
+  display: none;
+}
+
+/* Apply a monospaced font to ensure equal width for all characters */
+.time-unit span {
+  font-family: "Courier New", Courier, monospace; /* Monospaced font */
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  display: inline-block;
+  width: 55px; /* Fixed width to prevent shaking */
+  text-align: center;
+}
+
+.message {
+  font-size: 36px; /* Increase font size for a bold heading look */
+  font-weight: bold; /* Make the text bold */
+  color: #ffffff; /* Keep the color white for visibility */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.countdown-title {
+  font-size: 32px; /* Large font size for emphasis */
+  font-weight: bold; /* Bold text for better visibility */
+  color: #ffffff; /* White text color */
+  background-color: #0e50de; /* Solid orange background */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.modal-content input,
+.modal-content button {
+  width: 100%; /* Full width for uniform alignment */
+  max-width: 280px; /* Set a maximum width to prevent excessive stretching */
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc; /* Border for better visibility */
+  box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+.modal-content button {
+  background-color: #346add; /* Orange button color for visibility */
+  color: #f8f1f1; /* White text color */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #083392; /* Slightly darker shade on hover */
+}
