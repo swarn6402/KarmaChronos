@@ -1,25 +1,25 @@
 {
-  "manifest_version": 3,
-  "name": "Life/Event Timer Countdown",
+  "name": "Timer App",
+  "short_name": "Timer",
+  "description": "A simple timer application",
   "version": "1.0",
-  "description": "A countdown timer with a visual grid representation for your lifespan or events.",
-  "permissions": ["storage"],
-  "chrome_url_overrides": {
-    "newtab": "index.html"
-  },
-  "icons": {
-    "128": "Swarn.png"
-  },
-  "action": {
-    "default_icon": "Swarn.png"
-  },
-  "background": {
-    "service_worker": "script.js"
-  },
-  "web_accessible_resources": [
+  "icons": [
     {
-      "resources": ["style.css"],
-      "matches": ["<all_urls>"]
+      "src": "assets/Swarn.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
-  ]
+  ],
+  "start_url": "src/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "scope": "/",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "permissions": [],
+  "manifest_version": 2
 }
