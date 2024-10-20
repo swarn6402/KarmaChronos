@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Swarn.png" type="image/x-icon" />
+    <title>Life Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Settings Icon -->
+    <div class="settings" id="settingsIcon">☰</div>
+
+    <!-- Centered Content Container -->
+    <div class="centered-content">
+      <div class="message">
+        Time is fleeting, but karma is eternal— what you sow today, you reap tomorrow.
+      </div>
+      <div id="countdownTitle" class="countdown-title">Your Lifespan Countdown</div>
+      <div id="countdown" class="countdown">
+        <div class="time-unit">
+          <span id="years">00</span>
+          <p>YEARS</p>
+        </div>
+        <div class="time-unit">
+          <span id="months">00</span>
+          <p>MONTHS</p>
+        </div>
+        <div class="time-unit">
+          <span id="days">00</span>
+          <p>DAYS</p>
+        </div>
+        <div class="time-unit">
+          <span id="hours">00</span>
+          <p>HOURS</p>
+        </div>
+        <div class="time-unit">
+          <span id="minutes">00</span>
+          <p>MINUTES</p>
+        </div>
+        <div class="time-unit">
+          <span id="seconds">00</span>
+          <p>SECONDS</p>
+        </div>
+        <div class="time-unit">
+          <span id="milliseconds">000</span>
+          <p>MS</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- GitHub-style Grid Covering Full Page -->
+    <div class="grid" id="gridContainer" style="grid-template-columns: repeat(14, 1fr); grid-template-rows: repeat(6, 1fr);"></div>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal">
+      <div class="modal-content">
+        <h2>Set Countdown</h2>
+        <p>Choose one: Your lifespan or a specific event deadline.</p>
+
+        <!-- Tabbed Interface for Options -->
+        <div class="tab">
+          <button id="tabLifespan" class="tablinks">Lifespan Countdown</button>
+          <button id="tabEvent" class="tablinks">Event Deadline</button>
+        </div>
+
+        <!-- Lifespan Input -->
+        <div id="Lifespan" class="tabcontent">
+          <label for="dobInput">Enter your Date of Birth:</label>
+          <input type="date" id="dobInput" required />
+        </div>
+
+        <!-- Event Deadline Inputs -->
+        <div id="Event" class="tabcontent">
+          <label for="eventTitle">Event Title:</label>
+          <input type="text" id="eventTitle" placeholder="Enter event title" />
+
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" />
+
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" />
+        </div>
+
+        <p id="errorMessage" style="color: red; display: none">
+          Please fill in all fields.
+        </p>
+        <button id="saveSettings">Start Countdown</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
