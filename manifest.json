@@ -1,25 +1,30 @@
 {
-  "name": "Timer App",
-  "short_name": "Timer",
-  "description": "A simple timer application",
+  "manifest_version": 3,
+  "name": "Life Timer",
   "version": "1.0",
-  "icons": [
-    {
-      "src": "assets/Swarn.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    }
-  ],
-  "start_url": "src/index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "orientation": "portrait",
-  "scope": "/",
-  "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+  "description": "A countdown timer that visually represents time passed and time remaining using a grid.",
+
+  "chrome_url_overrides": {
+    "newtab": "src/index.html"
   },
-  "permissions": [],
-  "manifest_version": 2
+
+  "permissions": ["storage"],
+
+  "icons": {
+    "16": "assets/Swarn.png",
+    "48": "assets/Swarn.png",
+    "128": "assets/Swarn.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "assets/Swarn.png",
+      "48": "assets/Swarn.png",
+      "128": "assets/Swarn.png"
+    }
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  }
 }
