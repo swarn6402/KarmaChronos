@@ -11,16 +11,16 @@
   "permissions": ["storage"],
 
   "icons": {
-    "16": "../assets/swarn.png",
-    "48": "../assets/swarn.png",
-    "128": "../assets/swarn.png"
+    "16": "assets/swarn.png",
+    "48": "assets/swarn.png",
+    "128": "assets/swarn.png"
   },
 
   "action": {
     "default_icon": {
-      "16": "../assets/swarn.png",
-      "48": "../assets/swarn.png",
-      "128": "../assets/swarn.png"
+      "16": "assets/swarn.png",
+      "48": "assets/swarn.png",
+      "128": "assets/swarn.png"
     }
   },
 
