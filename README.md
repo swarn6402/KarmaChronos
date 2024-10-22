@@ -50,6 +50,7 @@ Timer4Life/
 │   └── style.css
 ├── .gitignore
 ├── manifest.json
+├── screenshots
 ├── background.js
 ├── LICENSE
 └── README.md
