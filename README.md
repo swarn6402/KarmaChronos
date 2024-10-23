@@ -1,4 +1,4 @@
-# Timer4Life Chrome Extension
+# KarmaChronos Chrome Extension
 
 ![Timer4Life Logo](assets/Swarn.png)
 
