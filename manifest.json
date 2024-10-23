@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Life Timer",
+  "name": "Karma Chronos",
   "version": "1.0",
   "description": "A countdown timer that visually represents time passed and time remaining using a grid.",
 
