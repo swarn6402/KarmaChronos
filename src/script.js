@@ -13,7 +13,7 @@ let countdownInterval;
 let millisecondsInterval;
 let lastUpdatedSquare = 0;
 
-// Show settings modal
+// Show the settings modal
 settingsIcon.addEventListener("click", () => {
   settingsModal.style.display = "flex";
   openTab("Lifespan"); // Default to Lifespan tab
